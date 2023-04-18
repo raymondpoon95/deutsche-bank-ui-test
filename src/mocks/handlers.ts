@@ -3,7 +3,7 @@ import { rest } from "msw";
 export const handlers = [
   rest.get("http://localhost:5173/api/employees", (req, res, ctx) => {
     return res(
-      ctx.delay(1000),
+      ctx.delay(1500),
       ctx.status(200),
       ctx.json([
         {
